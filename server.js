@@ -12,7 +12,7 @@ app.get("*", function (request, response) {
   response.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
 });
 
-app.use(cors());
+app.ucdse(cors());
 app.use(express.json());
 mongoose.connect(
   "mongodb+srv://chendjou237:CHEhon123*@crud.n2wx2.mongodb.net/food?retryWrites=true&w=majority",
